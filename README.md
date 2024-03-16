@@ -75,6 +75,26 @@ Run your Flask application:
 FLASK_APP=app.py flask run
 ```
 
+## Step 4: Testing the application
+
+1. List all tasks
+```
+curl http://localhost:5000/tasks
+```
+
+2. Create a new task
+
+Replace "Your task description here" with the description of the task you want to add.
+
+```
+curl -X POST http://localhost:5000/tasks -H "Content-Type: application/json" -d '{"description": "Your task description here"}'
+```
+
+3. Delete a task
+Replace <task_id> with the ID of the task you want to delete. You can get the task ID from the list tasks command.
+```
+curl -X DELETE http://localhost:5000/tasks/<task_id>
+```
 
 # More information about the project
 
