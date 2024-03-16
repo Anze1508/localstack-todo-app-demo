@@ -7,7 +7,6 @@ This application will allow users to create, list and delete tasks.
 - LocalStack installed and running.
 - AWS CLI installed and configured to use LocalStack.
 - Python and pip installed.
-- Basic familiarity with terminal or command prompt.
 
 ## Step 1: Setup LocalStack and create a DynamoDB Table
 
